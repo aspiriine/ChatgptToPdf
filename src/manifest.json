@@ -1,0 +1,25 @@
+{
+  "name": "ChatgptToPDF",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "author": "Adrián Marín",
+  "description": "Convert your ChatGTP conversation into a PDF file!",
+  "developer": {
+    "name": "Adrián Marín",
+    "url": "https://github.com/adrianmarinwork"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": [
+        "scripts/dom-to-image.min.js",
+        "scripts/FileSaver.min.js",
+        "scripts/jspdf.umd.min.js",
+        "logic.js"
+      ]
+    }
+  ]
+}
