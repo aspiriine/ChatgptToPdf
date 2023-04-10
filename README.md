@@ -1,5 +1,6 @@
 # ChatgptToPdf
 Download your ChatGPT conversation as a PDF or PNG file.
+Supported browsers: Chrome
 
 ## How to install
 ### Install to Chrome/Edge
