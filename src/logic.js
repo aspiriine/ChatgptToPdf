@@ -17,7 +17,7 @@ function runLogic() {
     //Create interval and add it to the window
     window.addButtonInterval = setInterval(
         function () {
-            let buttonsContainer = document.querySelector('form > div > div');
+            const buttonsContainer = document.querySelector('form > div > div');
 
             //If the container does not exists
             if (!buttonsContainer) {
@@ -29,8 +29,8 @@ function runLogic() {
                 buttonsContainer.querySelector('button')) {
 
                 //Get the regenerate response button and clone it
-                let regenerateResponseBtn = buttonsContainer.querySelector('button');
-                let downloadPdfButton = regenerateResponseBtn.cloneNode(true);
+                const regenerateResponseBtn = buttonsContainer.querySelector('button');
+                const downloadPdfButton = regenerateResponseBtn.cloneNode(true);
     
                 //Change the properties and append it to the buttonsContainer
                 downloadPdfButton.id = 'downloadPdfBtn';
@@ -45,8 +45,8 @@ function runLogic() {
                 buttonsContainer.querySelector('button')) {
 
                 //Get the regenrate response button and clone it
-                let regenerateResponseBtn = buttonsContainer.querySelector('button');
-                let downloadPngButton = regenerateResponseBtn.cloneNode(true);
+                const regenerateResponseBtn = buttonsContainer.querySelector('button');
+                const downloadPngButton = regenerateResponseBtn.cloneNode(true);
     
                 //Change the properties and append it to the buttonsContainer
                 downloadPngButton.id = 'downloadPngBtn';
