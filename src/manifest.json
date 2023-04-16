@@ -1,6 +1,6 @@
 {
   "name": "ChatgptToPDF",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 3,
   "author": "Adrián Marín",
   "description": "Convert your ChatGTP conversation into a PDF file!",
