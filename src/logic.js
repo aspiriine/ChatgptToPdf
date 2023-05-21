@@ -17,7 +17,7 @@ function runLogic() {
     //Create interval and add it to the window
     window.addButtonInterval = setInterval(
         function () {
-            const buttonsContainer = document.querySelector('form > div > div');
+            const buttonsContainer = document.querySelector('form > div > div > div');
 
             //If the container does not exists
             if (!buttonsContainer) {
@@ -80,7 +80,7 @@ function downloadPDF() {
         // let listOfPreHeaders = textBlock.querySelectorAll('pre > div > div.flex');
         // listOfPreHeaders.forEach(header => header.parentElement.removeChild(header));
 
-        lines = doc.setFont('Helvetica').setFontSize(textSize).splitTextToSize(textBlock.innerText, 7.5);
+        lines = doc.setFont("font").setFontSize(textSize).splitTextToSize(textBlock.innerText, 7.5);
 
         /*
             There exists the case that the lines we are going to render are bigger than the

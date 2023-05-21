@@ -14,6 +14,7 @@
         "scripts/dom-to-image.min.js",
         "scripts/FileSaver.min.js",
         "scripts/jspdf.umd.min.js",
+        "scripts/font-normal.js",
         "logic.js"
       ]
     }
